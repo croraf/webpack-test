@@ -10,8 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "pixi.js": "^5.3.3",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "devDependencies": {
+    "webpack-bundle-analyzer": "^3.8.0"
+  }
 }
