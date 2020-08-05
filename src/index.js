@@ -1,5 +1,5 @@
-import { comp1 } from './utils.js';
+import { comp1 } from './library/root.js';
 
-const f123 = n => comp1(n);
 
-export default f123;
+const my_function = n => comp1(n);
+my_function(5);
