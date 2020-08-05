@@ -90,23 +90,47 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _library_root_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./library/root.js */ \"./src/library/root.js\");\n\n\n\nconst my_function = n => Object(_library_root_js__WEBPACK_IMPORTED_MODULE_0__[\"comp1\"])(n);\nmy_function(5);\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/library/comp1.js":
+/*!******************************!*\
+  !*** ./src/library/comp1.js ***!
+  \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils.js */ \"./src/utils.js\");\n\n\nconst ooo = (n) => xyz(n);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (ooo);\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return comp1; });\n\nfunction comp1(x) {\n  console.log(1);\n  let y = 15 + x;\n  y++;\n  return y * y;\n};\n\n//# sourceURL=webpack:///./src/library/comp1.js?");
 
 /***/ }),
 
-/***/ "./src/utils.js":
-/*!**********************!*\
-  !*** ./src/utils.js ***!
-  \**********************/
-/*! exports provided: abc, xyz */
+/***/ "./src/library/comp2.js":
+/*!******************************!*\
+  !*** ./src/library/comp2.js ***!
+  \******************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"abc\", function() { return abc; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"xyz\", function() { return xyz; });\n\nfunction abc(x) {\n  console.log(1);\n  let y = 5 + x;\n  y++;\n  return y * y;\n};\n\nfunction xyz(x) {\n  let z = x * x + 1;\n  return z + 1;\n}\n\n\n//# sourceURL=webpack:///./src/utils.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return comp2; });\n\n\nfunction comp2(x) {\n  let z = x * x + 12;\n  return z + 17;\n}\n\n\n//# sourceURL=webpack:///./src/library/comp2.js?");
+
+/***/ }),
+
+/***/ "./src/library/root.js":
+/*!*****************************!*\
+  !*** ./src/library/root.js ***!
+  \*****************************/
+/*! exports provided: comp1, comp2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _comp1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./comp1 */ \"./src/library/comp1.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"comp1\", function() { return _comp1__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n/* harmony import */ var _comp2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./comp2 */ \"./src/library/comp2.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"comp2\", function() { return _comp2__WEBPACK_IMPORTED_MODULE_1__[\"default\"]; });\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/library/root.js?");
 
 /***/ })
 
